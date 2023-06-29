@@ -79,7 +79,7 @@ class Program
         int hours = timeSpentSeconds / 3600; // Number of whole hours
         int minutes = (timeSpentSeconds % 3600) / 60; // Number of whole minutes
 
-        string formattedTimeSpent = $"{hours}h{minutes}m";
+        string formattedTimeSpent = $"{hours}h{minutes.ToString().PadLeft(2, '0')}m";
         return formattedTimeSpent;
     }
 
